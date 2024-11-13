@@ -1,0 +1,62 @@
+POST http://localhost:3000/api/createauction
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyMjk0ODg4OCwiZXhwIjoxNzIyOTUyNDg4fQ.laDlAS3tv4yhcCzauoujPKoxLXvwxK6T9tkcGJXUyoA
+
+
+# {
+#   "refreshToken": "9b34ba9d-d352-4de0-aa7f-090dca9c61b1"
+# }
+
+
+# {
+#   "firstname": "Johzdsn",
+#   "middlename": "Doe",
+#   "lastname": "Smith",
+#   "email": "john.smith12@example.com",
+#   "password": "password123",
+#   "confirmPassword": "password123",
+#   "userType": "Bidder",
+#   "categories": [1]  // Note: Use "categories" as an array, not "category_id"
+# }
+
+
+# {
+  
+#   "auctioneer_id": 1,
+#   "name": "Vintage Watch",
+#   "location": "New York",
+#   "description": "A rare vintage watch...",
+#   "starting_bid": 1000,
+#   "bidding_type": "Lowest-type",
+#   "category_id": 2,
+#   "rarity": "Rare"
+# }
+
+# {
+#   "name": "Sample Auction",
+#   "location": "Sample Location",
+#   "description": "This is a description of the auction.",
+#   "starting_bid": 100,
+#   "bidding_type": "Lowest-type",
+#   "category_id": 1,
+#   "rarity": "Common"
+# }
+
+### Fetch Location ID by Name
+# POST http://localhost:3000/api/get-locationid-by-name
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyNTkwNTkxMCwiZXhwIjoxNzI1OTA5NTEwfQ.XKITnar0Y2qTW09bFufK3vbAfnAyh7YyAiWN1CXPDt4
+
+# {
+#   "name": "Cotabato City"
+# }
+
+
+POST http://localhost:3000/api/validate-otp
+Content-Type: application/json
+
+
+{
+  "email": "awtskie2000@gmail.com",
+  "otp": "dddd"
+}
